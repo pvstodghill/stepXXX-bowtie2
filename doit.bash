@@ -58,13 +58,13 @@ function notice_target
 
 function run_bowtie2 {
     TARGET_NAME=default
+    OUTPUT_NAME=output
     if [ "$1" = "-t" ] ; then
 	TARGET_NAME="$2" ; shift 2
     fi
     if [ "$1" = "-o" ] ; then
 	OUTPUT_NAME="$2" ; shift 2
     fi
-    OUTPUT_NAME=output
 
     INPUT_FILES=
     INPUT_ARG=
